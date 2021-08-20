@@ -1,0 +1,20 @@
+.skeleton {
+    min-height: 20px;
+    border-radius: 2px;
+    width: 100%;
+    display: inline-block;
+    animation: shimmerAnimation 2s infinite linear;
+    background: #f2f2f2;
+    background-size: 800px 104px;
+    background-image: linear-gradient(to right,#eeeeee 40%,#dddddd 50%,#eeeeee 60%);
+    background-repeat: no-repeat;
+}
+
+@keyframes shimmerAnimation{
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}

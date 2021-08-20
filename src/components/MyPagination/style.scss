@@ -1,0 +1,42 @@
+.pagination {
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &-body {
+        // max-width: 300px;
+        width: 100%;
+        width: fit-content;
+        display: flex;
+        margin: 20px 0;
+        @media screen and (max-width: 767){
+            max-width: 100%;
+        }
+        .left-arrow, .right-arrow, .mid {
+            width: 32px;
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e1e5e9;
+            border-radius: 3px;
+            cursor: pointer;
+            &::selection {
+                user-select: none;
+            }
+        }
+        .left-arrow, .right-arrow {
+            color: grey;
+            &:disabled {
+                background: #c8ced6;
+            }
+        }
+    }
+    &-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+}

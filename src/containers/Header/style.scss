@@ -1,0 +1,13 @@
+@import '../../variable';
+.common-header {
+    min-height: 60px;
+    background: #0694fd;
+    padding: 1.2rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+    @include Center(space-between);
+    cursor: pointer;
+    .logo {
+        margin: 0;
+        padding: .2rem 1.5rem;
+    }
+}

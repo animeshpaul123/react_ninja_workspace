@@ -1,0 +1,25 @@
+.bar-wrapper {
+    margin: 2rem 0;
+    .bar {
+        // border: 1px solid red;
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        &::before, &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #e7f0f5;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            left: -110%;
+        }
+        &::after {
+            right: -110%;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../variable';
+
+.login-wrapper {
+    background: aliceblue;
+    padding: 1rem;
+    .form-row {
+        min-height: 100vh;
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+    .form-card {
+        padding: 2rem;
+        border-radius: 5px;
+        background: #fff;
+        max-width: 450px;
+        flex-grow : 1;
+        width: 100%;
+        @media screen and (max-width: 767px){
+            max-width: 100%;
+        }
+        button {
+            background-color: #0694fd;
+            width: 100%;
+            border: none;
+            margin: 1.1rem 0 0;
+            padding: 0.7rem;
+        }
+    }
+    .form-label {
+        color: #798d9d;
+        display: block;
+        text-align: left;
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+    .form-control {
+        padding: 0.8rem .8rem;
+        font-size: 0.85rem;
+        color: #b2b9bd;
+        border-radius: 5px;
+        border-color: #e0e9ef;
+        &::placeholder {
+            color: #95a8b3;
+            line-height: 1.5;
+        }
+    }
+    .error {
+        text-align: center;
+        color: $danger;
+    }
+}

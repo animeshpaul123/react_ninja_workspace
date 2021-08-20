@@ -1,0 +1,6 @@
+$danger: #d24848;
+@mixin Center ($position: "center") {
+  display: flex;
+  justify-content: $position;
+  align-items: center;
+}
